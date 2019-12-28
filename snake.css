@@ -5,3 +5,21 @@ html{
 #board{
     border: 1px solid black;
 }
+
+.controls{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.b_top,
+.b_bottom {
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    border: 1px solid black;
+    line-height: 40px;
+    width: 40px;
+    text-align: center;
+}

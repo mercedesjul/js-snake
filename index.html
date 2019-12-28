@@ -6,10 +6,21 @@
     </head>
     <body>
         <canvas id="board" width="600px" height="600px"></canvas>
+        <div class="controls">
+            <div class="b_top">
+                <span class="button" onClick="g.handleKey(g.keycode.up)">&#x2191;</span>
+            </div>
+            <div class="b_bottom">
+                <span class="button" onClick="g.handleKey(g.keycode.left)">&#x2190;</span>
+                <span class="button" onClick="g.handleKey(g.keycode.down)">&#x2193;</span>
+                <span class="button" onClick="g.handleKey(g.keycode.right)">&#x2192;</span>
+            </div>
+        </div>
         <script src="./main.js"></script>
         <script src="./tile.js"></script>
         <script src="./game.js"></script>
         <script src="./snake.js"></script>
         <script src="./render.js"></script>
+        <script>g = new Game()</script>
     </body>
 </html>

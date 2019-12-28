@@ -1,10 +1,8 @@
-html{
-    overflow: hidden;
-}
-
 body{
+    display: flex;
+    flex-direction: column;
     width:600px;
-    height:700px;
+    height:800px;
     margin:0 auto;
     background:#f7f7f7;
     position:absolute;
@@ -16,22 +14,26 @@ body{
 
 #board{
     border: 1px solid black;
+    margin-bottom: 30px;
 }
 
 .controls{
-    font-size: 30px;
+    box-sizing: border-box;
+    font-size: 62px;
     display: flex;
     flex-direction: column;
     width: 600px;
 }
 .b_top,
 .b_bottom {
+    
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .button{
-    border: 1px solid black;
-    line-height: 40px;
-    width: 40px;
+    outline: 2px solid black;
+    height: 90px;
+    width: 90px;
     text-align: center;
+    margin: 5px;
 }
